@@ -32,7 +32,9 @@ class Programs {
               )
             ],
           ),
-          Row()
+          Row(
+            children: [],
+          )
         ],
       ),
     );
