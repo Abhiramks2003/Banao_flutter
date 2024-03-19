@@ -43,18 +43,30 @@ class Programs {
                 children: prgm.map((p) {
                   return Container(
                     margin: const EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5), // Shadow color
+                            spreadRadius: 5, // Spread radius
+                            blurRadius: 7, // Blur radius
+                            offset:
+                                const Offset(0, 3), // Offset from the bottom
+                          ),
+                        ]),
                     width: 242,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
                           margin: const EdgeInsets.all(0),
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: const Color(0xFFDDE3C2),
-                          ),
-                          // height: 100,
-                          child: Image.asset(
-                            p.image,
+                              borderRadius: BorderRadius.circular(8)),
+                          height: 140,
+                          child: Center(
+                            child: Image.asset(p.image),
                           ),
                         ),
                         Text(
@@ -81,6 +93,9 @@ class Programs {
                         ),
                         Text(
                           '${p.lesson.toString()} lessions',
+                          style: const TextStyle(
+                            color: Color(0xFF6D747A),
+                          ),
                         )
                       ],
                     ),

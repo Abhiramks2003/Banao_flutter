@@ -57,26 +57,22 @@ class _MyHomePageState extends State<MyHomePage> {
           const Center(
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[Text('Learn')])),
+          const Center(
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[Text('Hub')])),
+          const Center(
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                Text('You have pushed the button this many times:')
+                Text('Chat'),
               ])),
           const Center(
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                Text('You have pushed the button this many times:')
-              ])),
-          const Center(
-              child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                Text('You have times:'),
-              ])),
-          const Center(
-              child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                Text('You have pushed the button this many times:'),
+                Text('Profile'),
               ]))
         ][currentPageIndex]);
   }

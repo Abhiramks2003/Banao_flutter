@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class ProgramItems {
   String title;
   String description;
