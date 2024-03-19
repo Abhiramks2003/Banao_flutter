@@ -46,50 +46,38 @@ class _MyHomePageState extends State<MyHomePage> {
               });
             },
             selectedItemColor: const Color(0xFF598BED),
+            unselectedItemColor: const Color(0xFF939CA3),
+            selectedLabelStyle: const TextStyle(color: Color(0xFF598BED)),
+            unselectedLabelStyle: const TextStyle(color: Color(0xFF939CA3)),
             currentIndex: currentPageIndex,
+            showUnselectedLabels: true,
             items: Bottombar.bottomBarItems(currentPageIndex)),
         body: <Widget>[
           HomePage.homepageList(),
           const Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  'You have pushed the button this many times:',
-                ),
-              ],
-            ),
-          ),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                Text('You have pushed the button this many times:')
+              ])),
           const Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  'You have pushed the button this many times:',
-                ),
-              ],
-            ),
-          ),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                Text('You have pushed the button this many times:')
+              ])),
           const Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  'You have times:',
-                ),
-              ],
-            ),
-          ),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                Text('You have times:'),
+              ])),
           const Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  'You have pushed the button this many times:',
-                ),
-              ],
-            ),
-          ),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                Text('You have pushed the button this many times:'),
+              ]))
         ][currentPageIndex]);
   }
 }
