@@ -10,7 +10,8 @@ class HomePage {
       children: [
         Intro.introItems(),
         HomePageMenu.homePageMenuItems(),
-        Programs.programItems()
+        Programs.programItems(),
+        Programs.programItems(),
       ],
     );
   }

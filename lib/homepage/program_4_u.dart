@@ -43,7 +43,6 @@ class Programs {
                 children: prgm.map((p) {
                   return Container(
                     margin: const EdgeInsets.all(10),
-                    padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
                         color: Colors.white,
@@ -57,16 +56,18 @@ class Programs {
                           ),
                         ]),
                     width: 242,
+                    height: 280,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          margin: const EdgeInsets.all(0),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8)),
                           height: 140,
+                          decoration:
+                              const BoxDecoration(color: Color(0xFFDDE3C2)),
                           child: Center(
-                            child: Image.asset(p.image),
+                            child: Image.asset(
+                              p.image,
+                            ),
                           ),
                         ),
                         Text(
